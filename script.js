@@ -56,7 +56,8 @@ const rollDice = function () {
 
     // 2. display the dice
     diceEL.classList.remove('hidden');
-    diceEL.src = `dice-${dice}.png`;
+    diceEL.src = `img/dice-${dice}.png`;
+
     // 3. if dice is 2-6.. do this
     if (dice !== 1) {
       currentScore += dice;
