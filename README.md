@@ -7,4 +7,4 @@
 
 3 - Both player must take turns to roll the dice and accumulate point to their total score.
 4 - Whoever get the total score to 100 will win the game.
-5 - Enjoy the game with your friends!!
+5 - Enjoy the game with your friends!
