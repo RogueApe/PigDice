@@ -61,9 +61,7 @@ const rollDice = function () {
     // 3. if dice is 2-6.. do this
     if (dice !== 1) {
       currentScore += dice;
-      document.getElementById(
-        `current--${activePlayer}`
-      ).textContent = currentScore;
+      document.getElementById(`current--${activePlayer}`).textContent = currentScore;
       // current0EL.textContent = currentScore;
     } else {
       swapPlayer();
@@ -90,18 +88,13 @@ btnHold.addEventListener('click', function () {
   if (playGame) {
     // solutions
     scores[activePlayer] += currentScore;
-    document.getElementById(`score--${activePlayer}`).textContent =
-      scores[activePlayer];
+    document.getElementById(`score--${activePlayer}`).textContent = scores[activePlayer];
 
     if (scores[activePlayer] >= 20) {
       playGame = false;
 
-      document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.add('player--winner');
-      document
-        .querySelector(`.player--${activePlayer}`)
-        .classList.remove('player--active');
+      document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
+      document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
     } else {
       swapPlayer();
     }
