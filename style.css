@@ -16,10 +16,15 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #ce5148 0%, #6ad1df 80%);
-  background: url(img/dice-bg.jpg);
+  background: linear-gradient(
+      to right bottom,
+      rgba(236, 236, 209, 0.3),
+      rgba(122, 121, 122, 0.5)
+    ),
+    url(img/dice-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
